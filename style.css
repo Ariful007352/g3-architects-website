@@ -62,7 +62,10 @@ main >section{
 .bg-light{
   background-color: rgba(255, 144, 14, 0.10);
 }
-
+.section-title{
+font-size: 2.8rem;
+font-weight: 700;
+}
 /* header style */
 
 .brand-name{
@@ -80,17 +83,13 @@ text-decoration: none;
 font-size: medium;
 font-weight: 18px;
 }
-
-
-
 .nav-item {
   list-style: none;
   margin: 30px;
 }
-
  .navbar, .banner{
   max-width: 1440px;
-  margin: o auto;
+  margin: 0 auto;
  }
  .banner-contant{
   max-width: 850px;
@@ -104,7 +103,6 @@ font-weight: 18px;
  .banner-image{
   width: 100%;
  }
-
 /* team and feature related style  */
 .team-image-container{
   display: grid;
@@ -114,19 +112,39 @@ font-weight: 18px;
 /* .teams{
   text-align: center;
 } */
-
-.our-featuers{
+.our-features{
   margin-left: 130px;
   max-width: 530px;
 }
-.features-style{
-
+.Quick-list{
+  font-weight: 500;
 }
-
 
  /* /* responsive media query * */
 @media screen and (max-width: 576px) {
-  .navbar, .nav-links{
+  .navbar, 
+  .nav-links,
+  .teams
+  {
     flex-direction: column;
   }
+.team-image-container{
+  grid-template-columns: repeat(1, 1fr);
 }
+.our-features{
+margin-left: 20px;
+}
+}
+/* medium size device */
+@media screen and (min-width: 576) and (max-width: 992px) {
+  .teams{
+    flex-direction: column;
+  }
+  .our-features{
+    margin: 50px auto;
+  }
+}
+
+
+
+
