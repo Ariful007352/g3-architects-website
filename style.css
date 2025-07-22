@@ -1,19 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 .work-sans-fonts {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-font-weight: 500;
+  font-weight: 500;
   font-style: normal;
-
 }
 /* seared file */
-.btn-praimary{
-  background-color: #FF900E;
-  color: #FFFFFF;
+.btn-praimary {
+  background-color: #ff900e;
+  color: #ffffff;
   font-size: 1.25rem;
   padding: 20px 25px;
   font-weight: 600px;
@@ -21,90 +17,120 @@ font-weight: 500;
   border: none;
   margin-bottom: 50px;
 }
-.display-flex{
+.display-flex {
   display: flex;
   align-items: center;
 }
-main{
+main {
   max-width: 1440px;
   margin: 0 auto;
 }
-main >section{
+main > section {
   margin-top: 130px;
 }
 /* text-style */
 /* dark1 */
-.text-light-gray{
+.text-light-gray {
   color: #131313;
 }
-  /* dark02 */
- .text-gray{
+/* dark02 */
+.text-gray {
   color: #424242;
- }
-  /* dark03 */
-  .text-light-color{
-    color: #727272;
-  }
- .text-primary{
-    color: #FF900E;
- }
+}
+/* dark03 */
+.text-light-color {
+  color: #727272;
+}
+.text-primary {
+  color: #ff900e;
+}
 
-  
-.features-title{
+.features-title {
   font-size: 2.8rem;
   font-weight: 700;
 }
 
-  #Quick-list{
-    font-weight: 500;
-  }
-/* background color */
-.bg-light{
-  background-color: rgba(255, 144, 14, 0.10);
+#Quick-list {
+  font-weight: 500;
 }
-.section-title{
-font-size: 2.8rem;
-font-weight: 700;
+/* background color */
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 /* header style */
 
-.brand-name{
-font-weight: 700;
-font-size: 3rem;
+.brand-name {
+  font-weight: 700;
+  font-size: 3rem;
 }
 
- /* navbar style  */
-.navbar{
-justify-content: space-between;
-
-} 
-.nav-link{
-text-decoration: none;
-font-size: medium;
-font-weight: 18px;
+/* navbar style  */
+.navbar {
+  justify-content: space-between;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 18px;
 }
 .nav-item {
   list-style: none;
   margin: 30px;
 }
- .navbar, .banner{
+.navbar,
+.banner {
   max-width: 1440px;
   margin: 0 auto;
- }
- .banner-contant{
+}
+.banner-contant {
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
- }
- .banner-title{
+}
+.banner-title {
   font-size: 700;
   font-weight: 4rem;
- }
- .banner-image{
+}
+.banner-image {
   width: 100%;
- }
+}
+/* some facts related style  */
+.facts-description {
+  max-width: 380px;
+}
+
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.facts-card {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.facts-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.fact-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
 /* team and feature related style  */
-.team-image-container{
+.team-image-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
@@ -112,39 +138,34 @@ font-weight: 18px;
 /* .teams{
   text-align: center;
 } */
-.our-features{
+.our-features {
   margin-left: 130px;
   max-width: 530px;
 }
-.Quick-list{
+.Quick-list {
   font-weight: 500;
 }
 
- /* /* responsive media query * */
+/* /* responsive media query * */
 @media screen and (max-width: 576px) {
-  .navbar, 
+  .navbar,
   .nav-links,
-  .teams
-  {
+  .teams {
     flex-direction: column;
   }
-.team-image-container{
-  grid-template-columns: repeat(1, 1fr);
-}
-.our-features{
-margin-left: 20px;
-}
+  .team-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features {
+    margin-left: 20px;
+  }
 }
 /* medium size device */
 @media screen and (min-width: 576) and (max-width: 992px) {
-  .teams{
+  .teams {
     flex-direction: column;
   }
-  .our-features{
+  .our-features {
     margin: 50px auto;
   }
 }
-
-
-
-
